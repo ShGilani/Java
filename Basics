@@ -18,8 +18,11 @@ public Class Order {
 
 The approach where a static method internally creates and returns an instance of a certain type-- we call this factory method. (not using the new keyword).
 
-Immutable Object:
+Immutable Object: They are thread safe.
 Once Created, State cannot be altered.
-private variables. no setters. only getters. State is set using constructor or directly initializing the instance variable in the class.
+private instance variables initialized during declaration or set using constructor. no setters. only getters. 
+We can also mark private instance variables as final. that way, compiler will not allow setter method.
+
+
 
 
