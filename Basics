@@ -44,6 +44,33 @@ Once Created, State cannot be altered.
 private instance variables initialized during declaration or set using constructor. no setters. only getters. 
 We can also mark private instance variables as final. that way, compiler will not allow setter method.
 
+Enums:
+--------------------
+
+enum Snacks{
+	BURGER, SANDWHICH, FRANKIE;
+}
+
+public class Order {
+
+	private Snacks orderName;
+	
+	Order(Snacks snack){
+		orderName = snack;
+	}
+	
+	public static void main(String[] args) {
+		new Order(Snacks.BURGER).performOp();
+	}
+
+	public void performOp() {
+		System.out.println("Order name is: " + orderName);
+	}
+
+Enum values are instances of Enum Type.
+
+----------------------------
+
 
 
 
