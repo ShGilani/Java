@@ -9,8 +9,8 @@ public void performCaculation(int param){
 
 Or in this particular case, that value2 variable-- I'm assigning this param. Param is explicitly declared to be type of int. So again, the compiler has no problem unambiguously guessing that value2 really is type of int. So all you're doing here is that you just avoid typing yourself what the type is. And instead, you're essentially asking a compiler to guess it for you.
 
-Varargs/ Variable number of arguments (3 dots):
-----------------------------------------
+Varargs/ Variable number of arguments (3 dots): behaves similar to an Array
+-----------------------------------------------------------------------
 public class Order {
 
 	public static void main(String[] args) {
