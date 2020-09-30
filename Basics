@@ -6,7 +6,6 @@ you coincidentally created a local variable which has the exact same name as the
  The other way around, however, when I describe a static method-- inside a static method, I can certainly access static variables, sure, and invoke other static methods, of course. ***But what I can't do is I can't access an instance variable or an instance method. That simply will not compile.
  
 Static initializer is triggered once when the class is loaded to memory. Just once, that's it. 
-
 public Class Order {
   private static String organization;
   static {
@@ -15,6 +14,28 @@ public Class Order {
     organization = "M1";
    }
 }
+
+Instance Initializer is trigger when instance is created. Executed before the constructor.
+
+	private String orderName = "QQQ";
+	
+ //Instance Initializer
+	{
+		orderName = "PQR";
+	}
+
+	public static void main(String[] args) {
+		new Order().performOp();
+		new Order().performOp();
+	}
+
+	public void performOp() {
+		System.out.println("Order name is: " + orderName);
+	}
+ 
+ Output:
+ PQR
+ PQR
 
 The approach where a static method internally creates and returns an instance of a certain type-- we call this factory method. (not using the new keyword).
 
