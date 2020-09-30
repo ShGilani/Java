@@ -15,3 +15,5 @@ public Class Order {
     organization = "M1";
    }
 }
+
+The approach where a static method internally creates and returns an instance of a certain type-- we call this factory method. 
