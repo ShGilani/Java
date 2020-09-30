@@ -1,0 +1,12 @@
+Java 10: Local Variable Type Inference
+--------------------------------------------
+There are cases when Java compiler can guess what a variable type is for you. For example, if it's a local variable, and you assign some value to it, well, the compiler looks at what are you assigning. And it says here, oh, well, you're assigning string, so that variable surely is a type of string.
+
+public void performCaculation(int param){
+  value1 = "hello"; //infers String
+  value2 = param; //infers int
+}
+
+Or in this particular case, that value2 variable-- I'm assigning this param. Param is explicitly declared to be type of int. So again, the compiler has no problem unambiguously guessing that value2 really is type of int. So all you're doing here is that you just avoid typing yourself what the type is. And instead, you're essentially asking a compiler to guess it for you.
+
+
