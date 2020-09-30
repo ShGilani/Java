@@ -9,4 +9,33 @@ public void performCaculation(int param){
 
 Or in this particular case, that value2 variable-- I'm assigning this param. Param is explicitly declared to be type of int. So again, the compiler has no problem unambiguously guessing that value2 really is type of int. So all you're doing here is that you just avoid typing yourself what the type is. And instead, you're essentially asking a compiler to guess it for you.
 
+Varargs/ Variable number of arguments (3 dots):
+----------------------------------------
+public class Order {
 
+	public static void main(String[] args) {
+     new Order().performOp(111, "Mr A","Mr B");
+     new Order().performOp(111, "Mr X","Mr Y","Mr Z");
+     new Order().performOp(111, "Mr P");
+	}
+
+	public void performOp(int trainingID, String... participantNames) {
+		switch (participantNames.length) {
+
+		case 1: {
+			System.out.println(participantNames[0] + " is confirmed.");
+			System.out.println("some more lines of code...");
+			break;
+		}
+		case 2: {
+			System.out.println(participantNames[0] + " and " + participantNames[1] + " is confirmed.");
+			System.out.println("some more lines of code...");
+			break;
+		}
+		default: {
+			System.out.println("Many Participants");
+			System.out.println("some more lines of code...");
+		}
+		}
+	}
+}
