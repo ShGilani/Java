@@ -16,4 +16,10 @@ public Class Order {
    }
 }
 
-The approach where a static method internally creates and returns an instance of a certain type-- we call this factory method. 
+The approach where a static method internally creates and returns an instance of a certain type-- we call this factory method. (not using the new keyword).
+
+Immutable Object:
+Once Created, State cannot be altered.
+no setters. only getters. State is set using constructor or directly initializing the instance variable in the class.
+
+
