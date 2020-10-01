@@ -1,0 +1,3 @@
+Reuse through Inheritance:
+----------------------------------
+Multiple Inheritance is not allowed in Java. A Class can have only 1 direct Parent.
