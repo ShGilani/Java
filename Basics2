@@ -11,4 +11,14 @@ Factory Method Pattern:
 -------------------------
 Factory methods hide the use of constructor.
 
-Invoker can reamin Subtype unaware.
+Invoker can remain Subtype unaware.
+
+public class ProductFactory {
+
+	public Product createProduct(String productType) {
+		if("CAR".equals(productType)) {
+			return new Car();
+		}
+		return new Product();
+	}
+}
