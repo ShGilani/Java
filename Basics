@@ -114,6 +114,10 @@ Output:
 -------------
 c1 and c2 are not equal...
 p1 and p2 are equal...
+-------------------------------------
+hashCode method generates an id value for an Object. If two objects are equal, they should have same hashCode value.
+
+
 
 
 
