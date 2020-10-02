@@ -82,6 +82,40 @@ The == operator compares values in Stack.
 == is true when both the primitive values are same.
 == returns true when both the references refer to the same object.
 
+class Customer {
+	public String name;
+
+	Customer(String name) {
+		this.name = name;
+	}
+}
+
+public class Order {
+
+	public static void main(String[] args) {
+
+		Customer c1 = new Customer("ABC");
+		Customer c2 = new Customer("ABC");
+
+		Customer p1 = new Customer("PQR");
+		Customer p2 = p1;
+		
+		if (!c1.equals(c2)) {
+			System.out.println("c1 and c2 are not equal...");
+		}
+		
+		if (p1.equals(p2)) {
+			System.out.println("p1 and p2 are equal...");
+		}
+	}
+}
+
+Output:
+-------------
+c1 and c2 are not equal...
+p1 and p2 are equal...
+
+
 
 
 
