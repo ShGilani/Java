@@ -1,1 +1,56 @@
+Generics:
+-------------------------
+<T> generally for Type
+
+Comparable and Compartor Interfaces:
+-------------------------------------
+Comparable has .compareTo(T object)
+Comparator has .compare(T object1, T object2)
+
+String implements Comparable<T> (has compareTo method)
+
+Implementing Comparable allows:
+
+calling Collections.sort and Collections.binarySearch
+calling Arrays.sort and Arrays.binarySearch
+using objects as keys in a TreeMap
+using objects as elements in a TreeSet
+
+
+Example:
+
+class Customer implements Comparable<Customer>{
+	public String name;
+
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public int compareTo(Customer o) {
+		return this.getName().compareTo(o.getName());
+	}
+}
+
+public class Order {
+
+	public static void main(String[] args) {
+
+		Customer c1 = new Customer();
+		c1.setName("AAA");
+		Customer c2 = new Customer();
+		c2.setName("XYZ");
+		
+		System.out.println(c1.compareTo(c2));
+	}
+}
+
+
+
+
+
 
