@@ -1,3 +1,14 @@
 Reuse through Inheritance:
 ----------------------------------
 Multiple Inheritance is not allowed in Java. A Class can have only 1 direct Parent.
+
+Strings:
+-------------------
+Do not create String using new String().
+String a = "xxx"; is the recommended approach.
+
+Factory Method Pattern:
+-------------------------
+Factory methods hide the use of constructor.
+
+Invoker can reamin Subtype unaware.
