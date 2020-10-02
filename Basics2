@@ -31,9 +31,11 @@ Interfaces can solve multiple Inheritance problem. A class can implement multipl
 
 Exception: private/static/default concrete methods are allowed in Interfaces.
 
-Functional Interface:
+Functional Interface: (Recommended approach for designing Interface)
 --------------------------
 Has only 1 abstract method.
+
+
 
 
 
