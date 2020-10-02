@@ -49,6 +49,44 @@ public class Order {
 	}
 }
 
+Comparator Example:
+-------------------
+
+import java.util.Comparator;
+
+class CustomerComparator implements Comparator<Customer> {
+	
+	public int compare(Customer o1, Customer o2) {
+		return o1.getName().compareTo(o2.getName());
+	}
+}
+
+class Customer {
+	public String name;
+
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}	
+}
+
+public class Order {
+
+	public static void main(String[] args) {
+
+		Customer c1 = new Customer();
+		c1.setName("AAA");
+		Customer c2 = new Customer();
+		c2.setName("AAA");
+		
+		System.out.println(new CustomerComparator().compare(c1, c2));
+	}
+}
+
+
 
 
 
