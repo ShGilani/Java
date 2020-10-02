@@ -22,3 +22,19 @@ public class ProductFactory {
 		return new Product();
 	}
 }
+
+java Interfaces:
+-----------------------
+All methods are public, abstract
+No Instance Variables. Only public static final constants.
+Interfaces can solve multiple Inheritance problem. A class can implement multiple Interfaces., but can extend only 1 class.
+
+Exception: private/static/default concrete methods are allowed in Interfaces.
+
+Functional Interface:
+--------------------------
+Has only 1 abstract method.
+
+
+
+
