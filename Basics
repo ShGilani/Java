@@ -77,6 +77,11 @@ Passing the parameter
 It means copying stack values. If we pass Object as a param to a method, (We are basically copying the stack value to the parameter reference ie the Obj address )
 Now, both the variables point to the same Object. Any changes to parma Object will change the main Object too.
 These changes will not happen when param is a primitive. as for primitive, stack value will hold the value it self not the address pointing to heap.
+---------------------
+The == operator compares values in Stack.
+== is true when both the primitive values are same.
+== returns true when both the references refer to the same object.
+
 
 
 
