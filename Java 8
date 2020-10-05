@@ -1,9 +1,29 @@
 Increased code conciseness, a higher level of abstraction with Java 8. (instead of writing verbose code)
 
 
-Functional Style Programming
+Functional Style Programming 
 --------------------------------------------------------
+(DRY (don’t repeat yourself) principle of software engineering.)
+
 Behaviour Parameterization: Technique for passing code to methods as parameter. 
+The method’s behavior is parameterized. You are able to pass multiple behaviors to your method.
+
+better way than adding lots of parameters to cope with changing requirements. 
+
+ 
+
+predicate (that is, a function that returns a boolean). 
+
+
+
+side-effect-free functions or stateless functions: writing code that doesn’t access shared mutable data to do its job. no shared mutable data.
+
+In contrast, in the imperative programming paradigm you typically describe a program in terms of a sequence of statements that mutate state.
+
+The no-shared-mutable-data requirement means that a method is perfectly described solely by the way it transforms arguments to results; in other words, it behaves as a mathematical function and has no (visible) side effects.
 
 Stream Processing: Java 8 adds a Streams API 
 -----------------------
+
+Lambda Expressions:
+-------------------
