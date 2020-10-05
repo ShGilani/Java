@@ -10,7 +10,40 @@ The method’s behavior is parameterized. You are able to pass multiple behavior
 
 better way than adding lots of parameters to cope with changing requirements. 
 
- 
+
+public class SayHello {
+
+	static List<Integer> numbers = new ArrayList<Integer>();
+	static List<String> names = new ArrayList<String>();
+		
+	public static void main(String[] inputArray) {
+		
+		numbers.add(1); numbers.add(2); numbers.add(3); numbers.add(4);
+		
+		names.add("Sara"); names.add("aaa"); names.add("bbb"); names.add("Shahista");
+		
+		List<Integer> evenNumbers =
+				  filter(numbers, (Integer i) -> i % 2 == 0);
+		
+		
+		List<String> startsWithSList =
+				  filter(names, (String name) -> name.indexOf("S")==0);
+		
+	}
+
+	public static <T>List<T> filter(List<T> elements, Predicate<T> predicate){
+		List<T> filteredList = new ArrayList<T>();
+		for(T element : elements) {
+			if(predicate.test(element)) {
+				filteredList.add(element);
+			}
+		}
+		for(T elem: filteredList) {
+			System.out.println("..... "+elem);
+		}
+		return filteredList;
+	}	
+}
 
 predicate (that is, a function that returns a boolean). 
 
