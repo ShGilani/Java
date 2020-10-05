@@ -1,0 +1,9 @@
+Increased code conciseness, a higher level of abstraction with Java 8. (instead of writing verbose code)
+
+
+Functional Style Programming
+--------------------------------------------------------
+Behaviour Parameterization: Technique for passing code to methods as parameter. 
+
+Stream Processing: Java 8 adds a Streams API 
+-----------------------
