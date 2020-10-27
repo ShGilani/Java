@@ -1,9 +1,45 @@
 List -> ArrayList
 
-We can create an ArrayList using an existing Set:
+1. We can create an ArrayList using an existing Set:
 Set<String> namesSet = new HashSet<>();
 		namesSet.add("xxx");
 		namesSet.add("yyy");
 		namesSet.add("zzz");
 		
 		List<String> namesList2 = new ArrayList<>(namesSet);
+		
+2. We can create an ArrayList using an existing Array:		
+String[] namesArray = {"aaa", "bbb", "ccc"};
+		List<String> namesList1 = Arrays.asList(namesArray);
+		
+-----------------
+
+ArrayDeque:
+
+Deque<String> d = new ArrayDeque<>(namesList);
+		
+System.out.println("peek first: "+d.peekFirst());
+System.out.println("peek last: "+d.peekLast());
+
+d.offerFirst("000");
+System.out.println("After offer first: "+d);
+d.offerLast("999");
+System.out.println("After offer last: "+d);
+
+d.pollFirst();
+System.out.println("After poll first: "+d);
+d.pollLast();
+System.out.println("After poll last: "+d);
+
+Response:
+peek first: aaa
+peek last: ddd
+After offer first: [000, aaa, bbb, ccc, ddd]
+After offer last: [000, aaa, bbb, ccc, ddd, 999]
+After poll first: [aaa, bbb, ccc, ddd, 999]
+After poll last: [aaa, bbb, ccc, ddd]
+		
+		
+		
+		
+		
