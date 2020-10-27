@@ -42,4 +42,14 @@ int index = Arrays.binarySearch("xx");
 
 boolean isSame = Arrays.equals(arr1, arr2);
 
+------------------------
+
+char[] a = {'a','p','p','l','e'};
+		for(int i=0, j=1; i<a.length; i++,j--) {
+			System.out.println("=======================");
+			System.out.println("i: "+i);
+			System.out.println("j: "+j);
+			System.out.println("=======================");
+		}
+
 
