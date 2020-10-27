@@ -33,3 +33,13 @@ public class AboutArrays {
 	}
 
 }
+
+Useful methods of Arrays:
+--------------------------------
+Arrays.sort(workMethodCodes);
+
+int index = Arrays.binarySearch("xx");
+
+boolean isSame = Arrays.equals(arr1, arr2);
+
+
