@@ -1,0 +1,9 @@
+List -> ArrayList
+
+We can create an ArrayList using an existing Set:
+Set<String> namesSet = new HashSet<>();
+		namesSet.add("xxx");
+		namesSet.add("yyy");
+		namesSet.add("zzz");
+		
+		List<String> namesList2 = new ArrayList<>(namesSet);
