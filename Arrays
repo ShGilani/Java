@@ -42,6 +42,8 @@ int index = Arrays.binarySearch("xx");
 
 boolean isSame = Arrays.equals(arr1, arr2);
 
+List<String> namesList = Arrays.asList(namesArray);
+
 ------------------------
 
 char[] a = {'a','p','p','l','e'};
