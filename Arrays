@@ -15,6 +15,10 @@ public class AboutArrays {
 		//workMethodCodes[2] = "Maintenance";
     
 		String[] typesOfMfg = Arrays.copyOf(workMethodCodes, workMethodCodes.length);
+		//String[] typesOfMfg = Arrays.copyOfRange(workMethodCodes, 0, 1);
+		
+		String[] xArray = new String[5];
+		System.arraycopy(workMethodCodes, 0, xArray, 0, 2);
 			
 		for(String code : workMethodCodes) {
 			System.out.println("Original: "+code);
