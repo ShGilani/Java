@@ -56,9 +56,9 @@ char[] a = {'a','p','p','l','e'};
 
 //To print diagonal elements of a 2*2 matrix
 		char[][] a = {{'a','b','c'},{'d','e','f'},{'g','h','i'}};
-		for(int i=0, j=2; i<a.length || j >= 0; i++,j--) {
+		for(int row=0, column=2; row<a.length || column >= 0; row++,column--) {
 			System.out.println("=======================");
-			System.out.println("i: "+a[i][j]);
+			System.out.println("i: "+a[row][column]);
 			System.out.println("=======================");
 		}
 
