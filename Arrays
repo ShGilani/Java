@@ -1,0 +1,31 @@
+package com.sg.practice;
+
+import java.util.Arrays;
+
+public class AboutArrays {
+
+	public static void main(String[] args) {
+  
+		String[] workMethodCodes = {"Discrete", "Process", "Maintenance"};
+    //String[] workMethodCodes = new String[]{"Discrete", "Process", "Maintenance"};
+    
+    //String[] workMethodCodes = new String[5];
+		//workMethodCodes[0] = "Discrete";
+		//workMethodCodes[1] = "Process";
+		//workMethodCodes[2] = "Maintenance";
+    
+		String[] typesOfMfg = Arrays.copyOf(workMethodCodes, workMethodCodes.length);
+			
+		for(String code : workMethodCodes) {
+			System.out.println("Original: "+code);
+		}	
+		System.out.println("Original: "+workMethodCodes.length);
+		
+		
+		for(String code : typesOfMfg) {
+			System.out.println("New: "+code);
+		}		
+		System.out.println("New: "+typesOfMfg.length);
+	}
+
+}
