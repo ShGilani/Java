@@ -16,6 +16,8 @@ String[] namesArray = {"aaa", "bbb", "ccc"};
 
 ArrayDeque:
 
+ArrayDeque and LinkedList are implementing Deque interface but implementation is different.
+
 Deque<String> d = new ArrayDeque<>(namesList);
 		
 System.out.println("peek first: "+d.peekFirst());
