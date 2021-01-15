@@ -1,3 +1,5 @@
+Encapsulation can always be bypassed using Reflection.
+
 A void method may terminate using an empty return statement (return;)
 
 you coincidentally created a local variable which has the exact same name as the instance variable, in which case, "this" keyword helps you to distinguish local variable from the instance variable. So with the keyword "this," you're explicitly referring to the current instance rather than just any other local variable.
