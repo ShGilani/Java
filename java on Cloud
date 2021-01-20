@@ -13,6 +13,8 @@ yum install jdk-11.0.10_linux-x64_bin.rpm
 to download apache tomcat:
 wget https://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.61/bin/apache-tomcat-8.5.61.tar.gz
 
+tar xvzf apache-tomcat-8.5.61.tar.gz
+
 
 
 
