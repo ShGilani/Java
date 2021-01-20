@@ -4,7 +4,7 @@ sudo su (su = super user)
 
 yum install wget
 
-wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" "https://download.oracle.com/otn/java/jdk/11.0.10%2B8/020c4a6d33b74f6a9d2bc6fbf189da81/jdk-11.0.10_linux-x64_bin.rpm"
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "https://download.oracle.com/otn/java/jdk/11.0.10%2B8/020c4a6d33b74f6a9d2bc6fbf189da81/jdk-11.0.10_linux-x64_bin.rpm"
 
 yum install jdk-11.0.10_linux-x64_bin.rpm
 
