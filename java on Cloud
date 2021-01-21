@@ -8,12 +8,49 @@ wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2F
 
 yum install jdk-11.0.10_linux-x64_bin.rpm
 
+Set the JAVA_HOME and PATH:
+
+JAVA_HOME=/usr/java/jdk-11.0.10/
+export  JAVA_HOME
+PATH=$JAVA_HOME/bin:$PATH
+export PATH
+
 -------
 
 to download apache tomcat:
 wget https://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.61/bin/apache-tomcat-8.5.61.tar.gz
 
 tar xvzf apache-tomcat-8.5.61.tar.gz
+
+sudo su
+cd /usr/java/apache-tomcat-8.5.61/bin
+./startup.sh
+
+wget http://localhost:8080
+
+from Browser: http://ec2-18-222-37-207.us-east-2.compute.amazonaws.com:8080/
+
+----------------------------------------------------
+Admin or Manager access to Tomcat:
+----------------------------------------------------
+
+Edit /usr/java/apache-tomcat-8.5.61/conf/tomcat-users.xml
+
+<!--
+  NOTE:  By default, no user is included in the "manager-gui" role required
+  to operate the "/manager/html" web application.  If you wish to use this app,
+  you must define such a user - the username and password are arbitrary. It is
+  strongly recommended that you do NOT use one of the users in the commented out
+  section below since they are intended for use with the examples web
+  application.
+-->
+
+<role rolename="manager-gui"/>
+<user username="admin" password="admin" roles="manager-gui"/>
+
+Shutdown and start tomcat for changes to reflect.
+
+
 
 
 
