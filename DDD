@@ -1,0 +1,18 @@
+ domain is going to influence the system. System also influences the domain.
+
+it is very, very appropriate for an agile workflow because the underlying philosophy of DDD and the underlying philosophies of agile are almost identical. 
+
+It has several characteristics, the first of which is that it is a collaborative process. 
+
+
+ Step two, characteristic two, is that domain-driven design is built on the notion of modeling. 
+ The basic idea is that the structure of your code should model or map to the structure of the domain within which the problem is being solved.  And the idea is that a business user should be able to look at the overall large structure of your system and make sense of it. 
+ 
+  That means that when changes happen in one place it's easy to make changes in the other. And that's one of the main advantages of a DDD approach. In other words, changes happen in the domain. They don't happen in the code, they happen in the domain. So when that happens, you need to be able to get the equivalent change in the code as easily and as quickly as possible. If there is a one-to-one mapping between the code and a domain, when a change happens in the domain you know exactly where to look in the code in order to make that change. 
+  
+  The third characteristic of DDD that's important is that it's incremental. Now, the basic idea of an incremental approach is that you don't come up with a big architecture up front before you do any coding. Instead, you come up with just enough architecture to solve the problem that's right in front of you. Then as you implement that, you learn more about the problem. And that means that you have to go and change the architecture in order to accommodate whatever new things you learn as the code evolves. That's the agile way of working, of course. DDD was designed with that in mind. The basic idea then is that a domain-driven design architecture will allow your code to grow incrementally over time because the architecture itself grows incrementally over time.
+  
+  
+  
+  
+  
